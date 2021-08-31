@@ -1,0 +1,1409 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #253858;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #253858;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #42526E;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+#home {
+    background: url(../images/bg_image_1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home header {
+    margin-top: 20px;
+    background: #5e5c5c;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    padding: 20px;
+    opacity: 0.8;
+}
+#home header section.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#home header div.left {
+}
+#home header div.left h1  {
+}
+#home header div.left h1 a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+#home header div.middle {
+    width: 40%;
+    margin: auto;
+}
+#home header div.middle ul {
+    display: flex;
+    justify-content: space-between;
+}
+#home header div.middle ul li a {
+    color: #a3a2a2;
+    font-weight: 500;
+}
+#home header div.middle ul li:first-child a {
+    color: #fff;
+}
+#home header div.right {
+    margin: auto 0;
+}
+#home header div.right a.button {
+    padding: 12px 12px;
+    background: #2a60f6;
+    border-radius: 50%;
+    color: #fff;
+}
+#home::before {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+#home div.content {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 240px;
+}
+#home div.content h5 {
+    font-size: 20px;
+    color: #fff;
+}
+#home div.content h3 {
+    font-size: 45px;
+    margin: 15px;
+    color: #fff;
+}
+#home div.content h3 span.name {
+    color: #2a60f6;
+}
+#home div.content p {
+    font-size: 18px;
+    color: #2a60f6;
+    background: #363d56;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+#profile {
+    background: #fff;
+}
+#profile .wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+#profile div.left {
+    width: 45%; 
+}
+#profile div.left div.image-container {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+#profile div.left div.image-container div.box {
+    border: 4px solid #2a60f6;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+#profile div.left div.image-container img {
+    display: block;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+#profile div.right {
+    width: 55%;
+}
+#profile div.right h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#profile div.right h5 {
+    font-size: 24px;
+    color: #2a60f6;
+}
+#profile div.right p {
+    font-size: 18px;
+    width: 80%;
+    margin: 20px 0;
+}
+#profile div.right ul {
+    margin-bottom: 20px;
+}
+#profile div.right ul li {
+   margin: 10px 0;
+   font-size: 18px;
+}
+#profile div.right ul li span.bold {
+    font-weight: 700;
+}
+#profile div.right a.button {
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 3px solid #2a60f6;
+    border-radius: 8px;
+    color: #2a60f6;
+    box-shadow: 9px 8px 12px 0px #4a63fe82;
+}
+#profile div.right ul li span.round {
+    border: 2px solid blue;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+#profile div.right {
+    position: relative;
+}
+#profile div.right ul li span.round::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #2a60f6;
+    height: 20px;
+    width: 1px;
+    top: 9px;
+    left: 3px;
+}
+#profile div.right ul li:nth-child(2) span.round::before {
+    top: 9px;
+}
+#profile div.right ul li:nth-child(3) span.round::before {
+    top: 9px;
+}
+#profile div.right ul li:last-child span.round::before {
+   border: none;
+}
+#skills {
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+}
+#skills h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#skills div.content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+#skills div.content div.left {
+    width: 45%;
+}
+#skills div.content div.left h5 {
+    font-size: 26px;
+    font-weight: 700;
+}
+#skills div.content div.left ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#skills div.content div.left ul li {
+    width: 100%;
+}
+#skills div.content div.left ul li h5 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+#skills div.content div.left ul li div.border {
+    height: 28px;
+    border: 2px solid #2a60f6;
+    border-radius: 15px;
+    padding: 2px;
+}
+#skills div.content div.left ul li div.border div.bg {
+    background: #2a60f6;
+    border-radius: 15px;
+    width: 86%;
+    text-align: center;
+}
+#skills div.content div.left ul li:nth-child(2) div.border div.bg {
+    width: 80%;
+}
+#skills div.content div.left ul li:nth-child(3) div.border div.bg {
+    width: 100%;
+}
+#skills div.content div.left ul li:nth-child(4) div.border div.bg {
+    width: 90%;
+}
+#skills div.content div.left ul li div.border div.bg p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+#skills div.content div.right {
+    width: 45%;
+}
+#skills div.content div.right h5 {
+    font-size: 26px;
+    font-weight: 700;
+}
+#skills div.content div.right ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#skills div.content div.right ul li {
+    width: 100%;
+}
+#skills div.content div.right ul li h5 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+#skills div.content div.right ul li div.border {
+    height: 28px;
+    border: 2px solid #2a60f6;
+    border-radius: 15px;
+    padding: 2px;
+}
+#skills div.content div.right ul li div.border div.bg {
+    background: #2a60f6;
+    border-radius: 15px;
+    width: 86%;
+    text-align: center;
+}
+#skills div.content div.right ul li:nth-child(1) div.border div.bg {
+    width: 92%;
+}
+#skills div.content div.right ul li:nth-child(2) div.border div.bg {
+    width: 99%;
+}
+#skills div.content div.right ul li:nth-child(3) div.border div.bg {
+    width: 79%;
+}
+#skills div.content div.right ul li div.border div.bg p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+#education {
+    background: #fff;
+}
+#education .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+#education div.left {
+    width: 45%;
+}
+#education div h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#education div.left ul { 
+}
+#education div ul li div.content-1 {
+    width: 75%;
+}
+#education div ul li {
+    display: flex;
+    margin-bottom: 30px;
+}
+#education div ul li:nth-child(2) {
+    align-items: baseline;
+}
+#education div ul li:nth-child(3) {
+    align-items: baseline;
+}
+#education div ul li:first-child span.round {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+#education div ul li:nth-child(2) span.round {
+    margin-left: 8px;
+    border: #fff;
+}
+#education div ul li:nth-child(2) span.round span.bg{
+    top: 0.8px;
+    left: 1px;
+    background: #747474;
+}
+#education div ul li:nth-child(3) span.round span.bg {
+    top: 0.8px;
+    left: 1px;
+    background: #747474;
+}
+#education div ul li:nth-child(3) span.round {
+    margin-left: 8px;
+    border: #fff;
+}
+#education div ul li span.round {
+    border: 2px solid #2a60f6;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+}
+#education div ul li span.round span.bg {
+    background: blue;
+    display: inline-block;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+#education div ul li small {
+    font-size: 18px;
+    color: #fff;
+    padding: 6px 40px;
+    background: #747474;
+    display: inline-block;
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+}
+#education div ul li:first-child small {
+    background: #2a60f6;
+}
+#education div.ul li div.content {
+    width: 90%;
+}
+#education div ul li div.content-1 {
+    margin-left: 25px;
+}
+#education div ul li div.content-1 div.content {
+    margin-top: 20px;
+    background: #f4f5f8;
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+#education div ul li div.content h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+#education div ul li div.content h6 {
+    margin: 10px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: blue;
+}
+#education div ul li div.content p {
+    font-size: 16px;
+}
+#education div.right {
+    width: 45%;
+}
+#education div.left ul li:last-child span.round::before{
+    height: 210px;
+}
+#education div.right ul li:last-child span.round::before{
+    height: 210px;
+}
+#education div.left ul li span.round::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #747474;
+    height: 320px;
+    width: 1px;
+    top: 11px;
+    left: 6px;
+}
+#education div ul li:nth-child(2) span.round::before {
+    left: 6px;
+}
+#education div.left {
+    position: relative;
+}
+#education div.right ul li span.round::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #747474;
+    height: 320px;
+    width: 1px;
+    top: 11px;
+    left: 6px;
+}
+#education div.right {
+    position: relative;
+}
+#education div ul li:first-child span.round::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #747474;
+    height: 312px;
+    width: 1px;
+    top: 27px;
+    left: 12px;
+}
+#service {
+    padding: 100px 0;
+    background: #fff;
+}
+#service div.top {
+    text-align: center;
+}
+#service div.top ul {
+    display: flex;
+    flex-direction: column;
+}
+#service div.top ul li {
+}
+#service div.top ul li a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #f4f5f8;
+    color: blue;
+    font-weight: 500;
+    border-radius: 30px;
+}
+#service div.top ul li p {
+    margin: 30px 0;
+    font-size: 34px;
+}
+#service div.bottom {
+    padding: 30px 0;
+}
+#service div.bottom ul {
+    display: flex;
+    justify-content: space-between;
+}
+#service div.bottom ul li {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    text-align: center;
+    align-items: center;
+}
+#service div.bottom ul li div.image-container {
+    width: 30px;
+    height: 30px;
+    background: #f4f5f8;
+    border-radius: 50%;
+}
+#service div.bottom ul li h5 {
+    margin: 20px 0;
+    font-size: 20px;
+    color: blue;
+}
+#service div.bottom ul li p {   
+}
+body {
+    background: url(../images/bg_banner.jpg) no-repeat fixed 100%;
+    z-index: -5;
+}
+#numbers {
+    background-size: 100% 100%;
+    padding: 150px 0;
+}
+#numbers ul {
+    display: flex;
+    justify-content: space-between;
+}
+#numbers ul li {
+    width: 25%;
+    text-align: center;  
+}
+#numbers ul li p.number {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+#numbers ul li p.name {
+    color: #fff;
+    font-size: 20px;
+}
+#portfolio {
+    background: #fff;
+    padding: 50px 0;
+}
+#portfolio div.top {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+}
+#portfolio div.top a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #f4f5f8;
+    border-radius: 30px;
+    color: blue;
+}
+#portfolio div.top h3 {
+    font-size: 34px;
+    margin: 30px 0;
+}
+#portfolio div.top ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 31%;
+}
+#portfolio div.top ul li {
+    margin: 10px 0px 10px 3px;
+}
+#portfolio div.top ul li:last-child {
+    margin-right: 0;
+}
+#portfolio div.top ul li:nth-child(5) {
+    margin-right: 0;
+}
+#portfolio div.top ul li span.round {
+    border: 2px solid #2a60f6;
+    padding: 2px 2px;
+    display: flex;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+}
+#portfolio div.top ul li span.round span.bg {
+    display: inline-block;
+    padding: 0px 11px;
+    text-align: center;
+    border-radius: 30px;
+    background: #2a60f6;
+}
+#portfolio div.top ul li span.round span.bg p {
+    color: #fff;
+}
+#portfolio div.middle {
+}
+#portfolio div.middle ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#portfolio div.middle ul li {
+    width: 30%;
+    margin: 0px 25px 25px 0;
+    cursor: pointer;
+}
+#portfolio div.middle ul li:nth-child(3) {
+    margin-right: 0;
+}
+#portfolio div.middle ul li:nth-child(4),#portfolio div.middle ul li:nth-child(5) {
+    margin-bottom: 0;
+}
+#portfolio div.middle ul li:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+#portfolio div.middle ul li div.image-container {
+    width: 100%;
+    position: relative;
+}
+#portfolio div.middle ul li div.image-container img {
+    display: block;
+    width: 100%;
+    border-radius: 8px; 
+}
+#portfolio div.middle ul li:hover div.image-container div.content {
+    z-index: 2;
+    width: 100%;
+}
+#portfolio div.middle ul li div.image-container div.content {
+    background: #323131;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    border-radius: 0 0  8px 8px;
+    z-index: -2;
+    transition: width 1.5s;
+}
+#portfolio div.middle ul li div.image-container div.content h5 {
+    color: #2a60f6;
+    font-size: 18px;
+}
+#portfolio div.middle ul li div.image-container div.content p {
+    font-size: 14px;
+    color: #fff;
+}
+#portfolio div.bottom {
+    margin: 42px 0 50px;
+    text-align: center;
+}
+#portfolio div.bottom a.button {
+    padding: 12px 24px;
+    background: #2a60f6;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 9px 8px 12px 0px #4a63fe82;
+    display: inline-block;
+    cursor: pointer;
+}
+#picture {
+    padding: 100px 0;
+    background: #fff;
+}
+#picture div.top {
+    text-align: center;
+}
+#picture div.top h5 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+#picture div.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#picture div.bottom div.left {
+    width: 40%;
+    margin: 0 auto;
+}
+#picture div.bottom div.left div.image-container {
+    width: 70%;
+    height: 280px;
+    background: url(../images/testimonials/testimonials_1.jpg) no-repeat;
+    background-size: cover;
+}
+#picture div.bottom div.right {
+    width: 40%;
+}
+#picture div.bottom div.right p {
+    width: 80%;
+    font-size: 18px;
+}
+#picture div.bottom div.right div.image-container-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+#picture div.bottom div.right div.image-container {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../images/testimonials/testimonials_1.jpg);
+    background-size: cover;
+}
+#picture div.bottom div.right span.details {
+    width: 60%;
+    margin-left: 30px;
+}
+#picture div.bottom div.right span.details p.name {
+    width: 60%;
+    font-size: 18px;
+}
+#picture div.bottom div.right span.details p {
+    width: 60%;
+    font-size: 16px;
+}
+#logos {
+    background: #000;
+    padding: 100px;
+}
+#logos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#logos ul li {
+    width: 23%;
+    border-right: 1px solid #fff;
+}
+#logos ul li:nth-child(4),#logos ul li:last-child {
+    border-right: none;
+}
+#logos ul li:nth-child(5)::before {
+    content: "";
+    width: 90%;
+    height: 1px;
+    border-top:1px solid #fff;
+    position: absolute;
+}
+#logos ul li div.image-container {
+    width: 35%;
+    margin: 60px auto;
+}
+#logos ul li div.image-container img {
+    display: block;
+    width: 100%;
+    filter: grayscale(1) brightness(1.5);
+}
+#logos ul li:hover div.image-container img  {
+    transform: scale(1.5);
+    transition: .3s ease-in-out;
+}
+#blog {
+    background: #fff;
+    padding: 50px 0;
+}
+#blog div.top {
+    text-align: center;
+}
+#blog div.top a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #f4f5f8;
+    border-radius: 30px;
+    color: #2a60f6;
+}
+#blog div.top h5 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+#blog div.middle {  
+}
+#blog div.middle ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#blog div.middle ul li {
+    width: 30%;
+}
+#blog div.middle ul li div.image-container {
+    width: 90%;
+    box-shadow: 9px 8px 12px 0px #4a63fe82;
+}
+#blog div.middle ul li div.image-container img {
+    display: block;
+    width: 100%;
+}
+#blog div.middle ul li div.image-container div.content {   
+}
+#blog div.middle ul li div.image-container div.content h5 {
+    color: #2a60f6;
+    font-size: 18px;
+    margin: 10px 0;
+}
+#blog div.middle ul li div.image-container div.content h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+#blog div.middle ul li div.image-container div.content p {
+    font-size: 14px;
+}
+#blog div.bottom {
+    text-align: center;
+}
+#blog div.bottom a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2a60f6;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 9px 8px 12px 0px #4a63fe82;
+}
+#contact {
+    background: #fff;
+    padding: 30px 0;
+}
+#contact div.top {
+    text-align: center;
+}
+#contact div.top a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #f4f5f8;
+    border-radius: 30px;
+    color: #2a60f6;
+}
+#contact div.top h5 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+#contact div.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact div.bottom div.left {
+    width: 55%;
+}
+#contact div.bottom div.left div.image-container {
+    width: 100%;
+}
+#contact div.bottom div.left div.image-container img {
+    width: 100%;
+    display: block;
+}
+#contact div.bottom div.right {
+    width: 40%;
+    padding: 20px;
+}
+#contact div.bottom div.right form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+}
+#contact div.bottom div.right form input[type=text]{
+    width: 100%;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+}
+#contact div.bottom div.right form input.sub[type=text]{
+    width: 48%;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+}
+#contact div.bottom div.right form input[type=email] {
+    width: 48%;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px 0;
+}
+#contact div.bottom div.right form textarea {
+    width: 100%;
+    padding: 12px 24px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+#contact div.bottom div.right form input[type="submit"] {
+    padding: 12px 24px;
+    background: #2a60f6;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 18px;
+}
+#contact div.bottom div.right form input[type="submit"]:hover {
+    cursor: pointer;
+}
+footer {
+ background: #000;
+ padding: 30px 0;
+}
+footer div.top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer div.top h3 {
+    color: #9ea1aa;
+    font-size: 34px;
+}
+footer div.middle {
+}
+footer div.middle ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer div.middle ul li {
+    width: 30%;
+    color: #fff;
+}
+footer div.middle ul li:first-child {
+    width: 30%;
+}
+footer div.middle ul li:nth-child(2) {
+    width: 10%;
+}
+footer div.middle ul li:nth-child(2) h5::after {
+    width: 100%;
+}
+footer div.middle ul li:last-child {
+    width: 35%;
+}
+footer div.middle ul li:last-child h5::after {
+    width: 25%;
+}
+footer div.middle ul li h5 {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+footer div.middle ul li h5::after {
+    content: "";
+    border-bottom: 2px dashed #fff;
+    display: block;
+    width: 70%;
+    margin: 10px 0;
+}
+footer div.middle ul li {
+    display: flex;
+    flex-direction: column;
+}
+footer div.middle ul li p {
+    color: #fff;
+}
+footer div.middle ul li a.link {
+    color: #fff;
+    margin: 5px 0;
+}
+footer div.bottom {
+    padding: 30px;
+    text-align: center;   
+}
+footer div.bottom h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer div.bottom input[type=email] {
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    display: inline;
+}
+footer div.bottom a.button {
+    padding: 12px 24px;
+    background: blue;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    top: 1px;
+    left: -6px;
+}
+footer div.bottom p {
+    margin-top: 20px;
+    color: #fff;
+}
+footer div.bottom p a {
+    color: blue;
+}
+footer div.bottom p span {
+    color: red;
+    font-size: 20px;
+}
+@media all and ( max-width : 1080px ) {
+    #service {
+        padding: 50px 0;
+    }
+    #portfolio div.top ul {
+        width: 41%;
+    }
+    #portfolio div.middle ul li {
+        width: 28%;
+    }
+    #picture {
+        padding: 0px 0px 50px;
+    }
+    #logos ul li {
+        width: 25%;
+    }
+    #logos ul li:nth-child(5)::before {
+        width: 100%;
+    }
+    #blog div.middle ul li div.image-container div.content {
+        padding: 10px;
+    }
+}
+@media all and ( max-width : 980px ) {
+    #home header div.middle ul {
+        display: none;
+    }
+    #profile div.left {
+        width: 70%;
+    }
+    #education div.left ul li:last-child span.round::before {
+        height: 280px;
+    }
+    #education div.right ul li:last-child span.round::before {
+        height: 280px;
+    }
+    #numbers ul li p.name {
+        font-size: 18px;
+    }
+    #contact div.bottom div.right form {
+        padding: 0px;
+    }
+    #contact div.bottom div.left {
+        width: 60%;
+    }
+    #logos {
+        padding: 50px;
+    }
+}
+@media all and ( max-width : 768px ) {
+    #home div.content {
+        width: 60%;
+    }
+    #home div.content p {
+        font-size: 16px;
+    }
+    #profile .wrapper {
+        flex-wrap: wrap;
+    }
+    #profile div.right {
+        text-align: center;
+    }
+    #profile div.right p {
+        font-size: 18px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #profile div.right ul li {
+        margin: 10px auto;
+        width: 60%;
+        text-align: left;
+    }
+    #profile div.right a.button {
+        display: inline-block;
+    }
+    #profile .wrapper {
+        padding: 50px 0;
+    }
+    #education .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    #education div.left {
+        width: 90%;
+    }
+    #education div.right {
+        width: 90%;
+    }
+    #education div.left ul li:last-child span.round::before {
+        height: 200px;
+    }
+    #education div.right ul li:last-child span.round::before {
+        height: 200px;
+    }
+    #service div.bottom ul {
+        flex-wrap: wrap;
+    }
+    #service div.bottom ul li {
+        margin-bottom: 20px;
+        width: 45%;
+    }
+    #numbers ul li {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    #numbers ul {
+        flex-wrap: wrap;
+    }
+    #portfolio div.top ul {
+        width: 65%;
+    }
+    #logos {
+        padding: 20px;
+    }
+    #logos ul li div.image-container {
+        width: 50%;
+    }
+    #blog div.middle ul li div.image-container div.content h5 {
+        font-size: 16px;
+    }
+    #blog div.middle ul li div.image-container div.content h3 {
+        font-size: 18px;
+    }
+    #contact div.bottom div.left {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #contact div.bottom {
+        flex-wrap: wrap;
+    }
+    #contact div.bottom div.right {
+        width: 75%;
+        margin: 0 auto;
+    }
+    footer div.middle ul li:nth-child(2) {
+        width: 15%;
+    }
+    footer div.middle ul li h5 {
+        font-size: 16px;
+    }
+    footer div.middle ul li:last-child h5::after {
+        width: 51%;
+    }
+    footer div.middle ul li a.link {
+        font-size: 14px;
+    }
+    footer div.middle ul li p {
+        font-size: 14px;
+    }
+    footer div.bottom p {
+        font-size: 14px;
+    }
+}
+@media all and ( max-width : 640px ) {
+    #profile div.right ul li {
+        width: 80%;
+    }
+    #skills div.content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #skills div.content div.left {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    #skills div.content div.right {
+        width: 80%;
+    }
+    #skills div.content div.right ul li h5 {
+        font-size: 16px;
+    }
+    #skills div.content div.left ul li h5 {
+        font-size: 16px;
+    }
+    #portfolio div.middle ul li:nth-child(3) {
+        margin-right: 25px;
+    }
+    #portfolio div.middle ul li:last-child {
+        margin-right: 25px;
+    }
+    #portfolio div.middle ul li {
+        width: 40%;
+    }
+    #picture div.bottom {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #picture div.bottom div.left {
+        width: 90%;
+        margin: 0;
+    }
+    #picture div.bottom div.right {
+        width: 90%;
+        margin-top: 20px;
+    }
+    #logos ul li {
+        width: 50%;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    #logos ul {
+        flex-wrap: wrap;
+        
+    }
+    #logos ul li:nth-child(5)::before {
+        display: none;
+    }
+    #logos ul li:nth-child(odd) {
+        border-right: 1px solid #fff;
+    }
+    #logos ul li:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+    #blog div.middle ul li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #blog div.middle ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #blog div.middle ul li div.image-container {
+        width: 100%;
+    }
+    #contact div.bottom div.right {
+        width: 90%;
+    }
+    footer div.middle ul li:nth-child(2) {
+        width: 20%;
+    }
+    footer div.middle ul li:first-child {
+        width: 32%;
+    }
+}
+@media all and ( max-width : 480px ) {
+    #home header div.right {
+        display: none;
+    }
+    #home header section.wrapper {
+        display: inline-block;
+        text-align: center;
+    }
+    #home header {
+        text-align: center;
+    }
+    #home div.content h3 {
+        font-size: 36px;
+    }
+    #home div.content p {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+    #profile div.left {
+        width: 100%;
+    }
+    #profile div.right {
+        margin-top: 10px;
+    }
+    #profile div.right {
+        width: 80%;
+    }
+    #profile div.right h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #education div ul li div.content-1 {
+        margin-left: 10px;
+    }
+    #education div ul li div.content-1 {
+        width: 100%;
+    }
+    #education div.left ul li:last-child span.round::before {
+        height: 230px;
+    }
+    #education div.right ul li:last-child span.round::before {
+        height: 230px;
+    }
+    #education div.left {
+        width: 100%;
+    }
+    #education div.right {
+        width: 100%;
+    }
+    #service div.bottom ul li {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #service div.bottom ul li p {
+        width: 80%;
+    }
+    #numbers ul li {
+        width: 100%;
+    }
+    #numbers {
+        padding: 40px 0;
+    }
+    #portfolio div.top ul {
+        width: 100%;
+    }
+    #portfolio div.middle ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #portfolio div.middle ul li:nth-child(3) {
+        margin-right: 0;
+    }
+    #portfolio div.middle ul li:last-child {
+        margin-right: 0;
+    }
+    #picture div.bottom div.left div.image-container {
+        width: 100%;
+    }
+    #picture div.bottom div.right p {
+        width: 100%;
+    }
+    #picture div.bottom div.right span.details p.name {
+        width: 100%;
+    }
+    #picture div.bottom div.right span.details p {
+        width: 100%;
+    }
+    #contact div.bottom div.right form {
+        padding: 0;
+    }
+    footer div.middle ul li:first-child {
+        width: 100%;
+        margin-left: 15px;
+    }
+    footer div.middle ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer div.middle ul li {
+        margin-bottom: 20px;
+    }    
+    footer div.middle ul li:nth-child(2) {
+        width: 40%;
+    }
+    footer div.middle ul li:last-child {
+        width: 40%;
+    }
+    footer div.bottom input[type=email] {
+        border-radius: 8px;
+    }
+    footer div.bottom a.button {
+        top: 20px;
+        left: 0px;
+        border-radius: 8px;
+    }
+    footer div.bottom p {
+        margin-top: 45px;
+    }
+}
